@@ -1,0 +1,15 @@
+node_modules/
+.eslintrc
+.env
+Wired*
+index-1-1561405496999365712.wt
+index-1-4505479778200857828.wt
+journal/
+mongod.lock
+sizeStorer.wt
+storage.bson
+collection-0-1561405496999365712.wt
+collection-0-4505479778200857828.wt
+diagnostic.data/
+LICENSE.md
+_mdb_catalog.wt
