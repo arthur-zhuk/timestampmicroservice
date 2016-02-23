@@ -61,10 +61,10 @@ module.exports = function (app, passport) {
 				var time1 = parameterEntered.replace(/%20/g, " ");
 				res.json({'unix': moment(time1).unix(), 'natural': moment(time1, ["MMM DD YYYY"]).format("MMMM DD, YYYY")});
 			}
-			else if (parameterEntered.indexOf(" ") === -1 || parameterEntered.indexOf("%") === -1) {
+			else if (parameterEntered.length === 10) {
 				res.json({'unix': parameterEntered, 'natural': moment.unix(parameterEntered).format("MMMM DD, YYYY")});
 			} else {
-				return null;
+				res.json(null);
 			}
 		})
 
